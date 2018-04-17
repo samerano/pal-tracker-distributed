@@ -1,9 +1,10 @@
 applications:
 - name: tracker-timesheets
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
-  host: timesheets-pal-INITIALS
+  host: timesheets-pal-mm
   memory: 1G
   instances: 1
   services:
   - tracker-timesheets-database
   - tracker-service-registry
+  - tracker-circuit-breaker-dashboard
